@@ -1,2 +1,2 @@
 //Speed is higher when the delay is lower.
-javascript:setInterval(function(){window.scrollBy(0,1); }, delay=300);
+javascript:stop=false;(function recursion(){if(!stop){setTimeout(function(){window.scrollBy(0,1); recursion(); },300);}})();
